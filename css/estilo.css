@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+header{
+    flex: 0.15;
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+main{
+    padding: 5%;
+    flex: 1;
+    display: flex;
+    background-image: url(../img/paraiso.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+form{
+    padding: 20px;
+    display: flex;
+
+    background-color: blueviolet;
+}
+form div{
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+}
+label{
+    margin-left: 2px;
+}
+button{
+    flex: 1;
+}
