@@ -80,7 +80,9 @@ button{
     width: 130px;
     padding: 10px;
 }
-
+.habitacion h6{
+    color: rgb(21, 182, 21);
+}
 .habitacion >* {
     margin-bottom: 10px;
 }
