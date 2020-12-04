@@ -36,8 +36,14 @@ main{
 form{
     padding: 20px;
     display: flex;
-
-    background-color: blueviolet;
+    background-color:gold;
+}
+#home-tab{
+    background-color:gold;
+}
+#profile-tab{
+    color: white;
+    background-color: darkblue;
 }
 form div{
     padding: 10px;
@@ -46,14 +52,108 @@ form div{
     display: flex;
     flex-direction: column;
 }
-input{
+input,button,select{
+    background-color: transparent;
     text-decoration: none;
     border-style: none;
     outline: none;
+}
+#habitacion1 h6{
+    margin-top: 20px;
 }
 label{
     margin-left: 2px;
 }
 button{
     flex: 1;
+}
+#habitaciones{
+    visibility: hidden;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    width: fit-content;
+}
+.habitacion{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    padding: 10px;
+}
+
+.habitacion >* {
+    margin-bottom: 10px;
+}
+.selectores{
+    display: flex;
+    justify-content: space-between;
+}
+.selectores select{
+    align-self: flex-start;
+}
+.ninios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ninios select{
+    background-color: rgb(184, 44, 39);
+    margin-bottom: 10px;
+}
+hr{ 
+  
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         auto;
+    width:          1px;       
+}
+#anadirHabitacion{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#anadirContenedor{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(159, 218, 218);
+}
+.anadirplus {
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 168); 
+    color: white;
+    cursor: pointer;
+}
+.labelAnadir{
+    color:  rgb(60, 60, 168);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+#doneButton{
+    text-align: right;
+    color:  rgb(60, 60, 168);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.popover{
+    max-width: 100%;
+}
+.eliminarHabitacion{
+    align-self: flex-end;
+    cursor: pointer;
+}
+#editarHabitaciones{
+    cursor: pointer; 
 }
